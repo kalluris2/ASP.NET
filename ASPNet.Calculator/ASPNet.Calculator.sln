@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNet.Calculator", "ASPNet.Calculator\ASPNet.Calculator.csproj", "{6EF53B2D-1F2A-47C8-A745-06AED5335419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNet.Calculator.Tests", "ASPNet.Calculator.Tests\ASPNet.Calculator.Tests.csproj", "{6CA16807-1545-4DB2-9983-3955950F42B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EF53B2D-1F2A-47C8-A745-06AED5335419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF53B2D-1F2A-47C8-A745-06AED5335419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF53B2D-1F2A-47C8-A745-06AED5335419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF53B2D-1F2A-47C8-A745-06AED5335419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA16807-1545-4DB2-9983-3955950F42B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA16807-1545-4DB2-9983-3955950F42B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA16807-1545-4DB2-9983-3955950F42B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA16807-1545-4DB2-9983-3955950F42B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6EA4C24-5C40-4481-8619-A2B3CA2CA530}
+	EndGlobalSection
+EndGlobal

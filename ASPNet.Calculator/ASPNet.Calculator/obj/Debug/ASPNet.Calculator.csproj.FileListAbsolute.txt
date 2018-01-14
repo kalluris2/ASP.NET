@@ -1,0 +1,9 @@
+F:\ASPNet.Calculator\ASPNet.Calculator\bin\ASPNet.Calculator.dll.config
+F:\ASPNet.Calculator\ASPNet.Calculator\bin\ASPNet.Calculator.dll
+F:\ASPNet.Calculator\ASPNet.Calculator\bin\ASPNet.Calculator.pdb
+F:\ASPNet.Calculator\ASPNet.Calculator\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASPNet.Calculator\ASPNet.Calculator\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASPNet.Calculator\ASPNet.Calculator\obj\Debug\ASPNet.Calculator.csprojResolveAssemblyReference.cache
+F:\ASPNet.Calculator\ASPNet.Calculator\obj\Debug\ASPNet.Calculator.csproj.CoreCompileInputs.cache
+F:\ASPNet.Calculator\ASPNet.Calculator\obj\Debug\ASPNet.Calculator.dll
+F:\ASPNet.Calculator\ASPNet.Calculator\obj\Debug\ASPNet.Calculator.pdb
