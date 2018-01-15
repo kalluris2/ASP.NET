@@ -1,0 +1,9 @@
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\bin\CalculatorJavascript.dll.config
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\bin\CalculatorJavascript.dll
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\bin\CalculatorJavascript.pdb
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\obj\Debug\CalculatorJavascript.csprojResolveAssemblyReference.cache
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\obj\Debug\CalculatorJavascript.csproj.CoreCompileInputs.cache
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\obj\Debug\CalculatorJavascript.dll
+F:\ASP.NET\CalculatorJavascript\CalculatorJavascript\obj\Debug\CalculatorJavascript.pdb
