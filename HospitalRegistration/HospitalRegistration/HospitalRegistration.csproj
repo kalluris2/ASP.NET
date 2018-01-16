@@ -75,11 +75,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BindingData.aspx" />
     <Content Include="PatientRegistration.aspx" />
     <Content Include="UpdatePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingData.aspx.cs">
+      <DependentUpon>BindingData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BindingData.aspx.designer.cs">
+      <DependentUpon>BindingData.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PatientRegistration.aspx.cs">
       <DependentUpon>PatientRegistration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

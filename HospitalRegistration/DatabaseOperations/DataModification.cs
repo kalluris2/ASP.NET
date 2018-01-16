@@ -13,13 +13,13 @@ using System.Web.UI;
 namespace DatabaseOperations
 {
     public class DataModifications
-    {        
+    {
         SqlConnection connection = null;
 
         public SqlConnection DatabaseConnect()
         {
-                string Name = @"Data Source=DESKTOP-BA6B0TS;Initial Catalog=Hospital;Integrated Security=true";
-                return new SqlConnection(Name);
+            string Name = @"Data Source=DESKTOP-BA6B0TS;Initial Catalog=Hospital;Integrated Security=true";
+            return new SqlConnection(Name);
         }
         public bool InsertPatientDetails(PatientInformation Values)
         {
@@ -42,7 +42,7 @@ namespace DatabaseOperations
             {
                 // throw new Exception(ex.Message.ToString());
                 // Response.Write("<script>alert('" + Server.HtmlEncode(ex.ToString()) + "')</script>");
-               // HttpContext.Current.Response.Write("<script>alert('" + ex.Message + "')</script>");
+                HttpContext.Current.Response.Write("<script>alert('" + ex.Message + "')</script>");
 
             }
             finally
@@ -66,8 +66,9 @@ namespace DatabaseOperations
                 cmd.ExecuteNonQuery();
                 return true;
             }
-            catch (Exception ex )
+            catch (Exception ex)
             {
+                HttpContext.Current.Response.Write("<script>alert('" + ex.Message + "')</script>");
 
             }
             finally
@@ -76,5 +77,28 @@ namespace DatabaseOperations
             }
             return false;
         }
+
+        /*public void DataBinding()
+        {
+            try
+            {
+                connection = DatabaseConnect();
+                connection.Open();
+                string command = "select * from PatientInformation";
+                SqlCommand cmd = new SqlCommand(command, connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+                Data
+
+            }
+            catch (Exception ex)
+            {
+                HttpContext.Current.Response.Write("<script>alert('" + ex.Message + "')</script>");
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }*/
     }
 }

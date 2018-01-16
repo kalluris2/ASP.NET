@@ -83,5 +83,10 @@ namespace HospitalRegistration
         {
             Response.Redirect("UpdatePage.aspx");
         }
+
+        protected void viewButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BindingData.aspx");
+        }
     }
 }
