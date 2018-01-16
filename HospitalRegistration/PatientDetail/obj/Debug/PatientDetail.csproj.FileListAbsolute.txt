@@ -1,0 +1,6 @@
+F:\ASP.NET\HospitalRegistration\PatientDetail\bin\Debug\PatientDetail.dll
+F:\ASP.NET\HospitalRegistration\PatientDetail\bin\Debug\PatientDetail.pdb
+F:\ASP.NET\HospitalRegistration\PatientDetail\obj\Debug\PatientDetail.csprojResolveAssemblyReference.cache
+F:\ASP.NET\HospitalRegistration\PatientDetail\obj\Debug\PatientDetail.csproj.CoreCompileInputs.cache
+F:\ASP.NET\HospitalRegistration\PatientDetail\obj\Debug\PatientDetail.dll
+F:\ASP.NET\HospitalRegistration\PatientDetail\obj\Debug\PatientDetail.pdb

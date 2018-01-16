@@ -1,0 +1,8 @@
+F:\ASP.NET\HospitalRegistration\DatabaseOperations\bin\Debug\DatabaseOperations.dll
+F:\ASP.NET\HospitalRegistration\DatabaseOperations\bin\Debug\DatabaseOperations.pdb
+F:\ASP.NET\HospitalRegistration\DatabaseOperations\bin\Debug\PatientDetail.dll
+F:\ASP.NET\HospitalRegistration\DatabaseOperations\bin\Debug\PatientDetail.pdb
+F:\ASP.NET\HospitalRegistration\DatabaseOperations\obj\Debug\DatabaseOperations.csprojResolveAssemblyReference.cache
+F:\ASP.NET\HospitalRegistration\DatabaseOperations\obj\Debug\DatabaseOperations.csproj.CoreCompileInputs.cache
+F:\ASP.NET\HospitalRegistration\DatabaseOperations\obj\Debug\DatabaseOperations.dll
+F:\ASP.NET\HospitalRegistration\DatabaseOperations\obj\Debug\DatabaseOperations.pdb

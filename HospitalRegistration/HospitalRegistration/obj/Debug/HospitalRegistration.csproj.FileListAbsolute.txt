@@ -1,0 +1,13 @@
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\HospitalRegistration.dll.config
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\HospitalRegistration.dll
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\HospitalRegistration.pdb
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\obj\Debug\HospitalRegistration.csprojResolveAssemblyReference.cache
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\obj\Debug\HospitalRegistration.csproj.CoreCompileInputs.cache
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\obj\Debug\HospitalRegistration.dll
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\obj\Debug\HospitalRegistration.pdb
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\DatabaseOperations.dll
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\PatientDetail.dll
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\DatabaseOperations.pdb
+F:\ASP.NET\HospitalRegistration\HospitalRegistration\bin\PatientDetail.pdb
