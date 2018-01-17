@@ -88,5 +88,12 @@ namespace HospitalRegistration
         {
             Response.Redirect("BindingData.aspx");
         }
+
+        protected void insertButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DataInsertion.aspx");
+
+
+        }
     }
 }

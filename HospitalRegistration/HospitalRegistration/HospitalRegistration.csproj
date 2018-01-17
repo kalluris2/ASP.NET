@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BindingData.aspx" />
+    <Content Include="DataInsertion.aspx" />
     <Content Include="PatientRegistration.aspx" />
     <Content Include="UpdatePage.aspx" />
     <Content Include="Web.config" />
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="BindingData.aspx.designer.cs">
       <DependentUpon>BindingData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataInsertion.aspx.cs">
+      <DependentUpon>DataInsertion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataInsertion.aspx.designer.cs">
+      <DependentUpon>DataInsertion.aspx</DependentUpon>
     </Compile>
     <Compile Include="PatientRegistration.aspx.cs">
       <DependentUpon>PatientRegistration.aspx</DependentUpon>

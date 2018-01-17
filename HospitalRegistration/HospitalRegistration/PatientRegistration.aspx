@@ -27,11 +27,15 @@
             <asp:Label ID="admittedDateLable" runat="server" Text="Admitted Date:"></asp:Label>
 &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="admittedDateTextBox" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="insertLabel" runat="server" Text="To Insert Data through datagrid click insert"></asp:Label>
             <br />
             <br />
             <asp:Label ID="admittedWardLabel" runat="server" Text="Admitted Ward:"></asp:Label>
 &nbsp;&nbsp;
             <asp:TextBox ID="admittedWardTextBox" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="insertButton" runat="server" OnClick="insertButton_Click" Text="Insert" />
             <br />
             <br />
             <asp:Label ID="reasonLabel" runat="server" Text="Reason:"></asp:Label>
@@ -46,10 +50,10 @@
             <asp:Button ID="clearButton" runat="server" OnClick="clearButton_Click" Text="Clear" />
             <br />
             <br />
-            <br />
             <asp:Label ID="Label1" runat="server" Text="To Update Patient Info Click Update"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label2" runat="server" Text="To View Patients list Block Wise Clik View"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

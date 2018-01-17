@@ -94,6 +94,15 @@ namespace HospitalRegistration {
         protected global::System.Web.UI.WebControls.TextBox admittedDateTextBox;
         
         /// <summary>
+        /// insertLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label insertLabel;
+        
+        /// <summary>
         /// admittedWardLabel control.
         /// </summary>
         /// <remarks>
@@ -110,6 +119,15 @@ namespace HospitalRegistration {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox admittedWardTextBox;
+        
+        /// <summary>
+        /// insertButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button insertButton;
         
         /// <summary>
         /// reasonLabel control.
@@ -164,6 +182,15 @@ namespace HospitalRegistration {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
+        
+        /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
         /// updateButton control.

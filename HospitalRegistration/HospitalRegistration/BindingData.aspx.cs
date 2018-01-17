@@ -22,6 +22,18 @@ namespace HospitalRegistration
             DataGridView.DataBind();
             connection.Close();
 
+
+
+        }
+
+        protected void DataGridView_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+        }
+
+        protected void DataGridView_RowUpdated(object sender, GridViewUpdatedEventArgs e)
+        {
+
         }
     }
 }
