@@ -1,0 +1,8 @@
+F:\ASP.NET\DataGrid\DataGrid\bin\DataGrid.dll.config
+F:\ASP.NET\DataGrid\DataGrid\bin\DataGrid.dll
+F:\ASP.NET\DataGrid\DataGrid\bin\DataGrid.pdb
+F:\ASP.NET\DataGrid\DataGrid\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASP.NET\DataGrid\DataGrid\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASP.NET\DataGrid\DataGrid\obj\Debug\DataGrid.csproj.CoreCompileInputs.cache
+F:\ASP.NET\DataGrid\DataGrid\obj\Debug\DataGrid.dll
+F:\ASP.NET\DataGrid\DataGrid\obj\Debug\DataGrid.pdb
