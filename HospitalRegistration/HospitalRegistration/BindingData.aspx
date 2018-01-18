@@ -10,8 +10,6 @@
     <form id="form1" runat="server">
         <asp:GridView ID="DataGridView" runat="server" AllowSorting="True" AutoGenerateEditButton="True" AutoGenerateSelectButton="True" Height="276px" OnRowEditing="DataGridView_RowEditing" OnRowUpdated="DataGridView_RowUpdated" Width="557px">
         </asp:GridView>
-        <div>
-        </div>
     </form>
 </body>
 </html>
