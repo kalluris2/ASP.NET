@@ -1,0 +1,6 @@
+F:\ASP.NET\ChitApplication\PersonDetails.Model\bin\Debug\PersonDetails.Model.dll
+F:\ASP.NET\ChitApplication\PersonDetails.Model\bin\Debug\PersonDetails.Model.pdb
+F:\ASP.NET\ChitApplication\PersonDetails.Model\obj\Debug\PersonDetails.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApplication\PersonDetails.Model\obj\Debug\PersonDetails.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApplication\PersonDetails.Model\obj\Debug\PersonDetails.Model.dll
+F:\ASP.NET\ChitApplication\PersonDetails.Model\obj\Debug\PersonDetails.Model.pdb

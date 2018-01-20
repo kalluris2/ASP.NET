@@ -1,0 +1,11 @@
+F:\ASP.NET\ChitApplication\ChitApplication\bin\ChitApplication.dll.config
+F:\ASP.NET\ChitApplication\ChitApplication\bin\ChitApplication.dll
+F:\ASP.NET\ChitApplication\ChitApplication\bin\ChitApplication.pdb
+F:\ASP.NET\ChitApplication\ChitApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASP.NET\ChitApplication\ChitApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASP.NET\ChitApplication\ChitApplication\obj\Debug\ChitApplication.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApplication\ChitApplication\obj\Debug\ChitApplication.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApplication\ChitApplication\obj\Debug\ChitApplication.dll
+F:\ASP.NET\ChitApplication\ChitApplication\obj\Debug\ChitApplication.pdb
+F:\ASP.NET\ChitApplication\ChitApplication\bin\PersonDetails.Model.dll
+F:\ASP.NET\ChitApplication\ChitApplication\bin\PersonDetails.Model.pdb
