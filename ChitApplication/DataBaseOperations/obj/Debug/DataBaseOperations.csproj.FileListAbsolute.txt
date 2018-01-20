@@ -1,0 +1,8 @@
+F:\ASP.NET\ChitApplication\DataBaseOperations\bin\Debug\DataBaseOperations.dll
+F:\ASP.NET\ChitApplication\DataBaseOperations\bin\Debug\DataBaseOperations.pdb
+F:\ASP.NET\ChitApplication\DataBaseOperations\bin\Debug\PersonDetails.Model.dll
+F:\ASP.NET\ChitApplication\DataBaseOperations\bin\Debug\PersonDetails.Model.pdb
+F:\ASP.NET\ChitApplication\DataBaseOperations\obj\Debug\DataBaseOperations.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApplication\DataBaseOperations\obj\Debug\DataBaseOperations.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApplication\DataBaseOperations\obj\Debug\DataBaseOperations.dll
+F:\ASP.NET\ChitApplication\DataBaseOperations\obj\Debug\DataBaseOperations.pdb

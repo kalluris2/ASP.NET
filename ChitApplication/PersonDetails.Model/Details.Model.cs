@@ -14,6 +14,10 @@ namespace PersonDetails.Model
         private int PhoneNumber;
         private string Address = "";
         private string ChitId = "";
+        private string PaidDate = "";
+        private int AmountPaid;
+        private int PaymentId;
+        private int EMINo;
 
         public int registrationnumber { get => RegistrationNumber; set => RegistrationNumber = value; }
         public string firstname { get => FirstName; set => FirstName = value; }
@@ -21,6 +25,11 @@ namespace PersonDetails.Model
         public int phonenumber { get => PhoneNumber; set => PhoneNumber = value; }
         public string address { get => Address; set => Address = value; }
         public string chitid { get => ChitId; set => ChitId = value; }
+        public string paiddate { get => PaidDate; set => PaidDate = value; }
+        public int amountpaid { get => AmountPaid; set => AmountPaid = value; }
+        public int paymentid { get => PaymentId; set => PaymentId = value; }
+        public int emino { get => EMINo; set => EMINo = value; }
+
 
 
 

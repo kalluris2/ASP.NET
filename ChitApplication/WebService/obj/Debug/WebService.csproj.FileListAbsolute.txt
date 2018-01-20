@@ -1,0 +1,13 @@
+F:\ASP.NET\ChitApplication\WebService\bin\WebService.dll.config
+F:\ASP.NET\ChitApplication\WebService\bin\WebService.dll
+F:\ASP.NET\ChitApplication\WebService\bin\WebService.pdb
+F:\ASP.NET\ChitApplication\WebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASP.NET\ChitApplication\WebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASP.NET\ChitApplication\WebService\obj\Debug\WebService.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApplication\WebService\obj\Debug\WebService.dll
+F:\ASP.NET\ChitApplication\WebService\obj\Debug\WebService.pdb
+F:\ASP.NET\ChitApplication\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApplication\WebService\bin\DataBaseOperations.dll
+F:\ASP.NET\ChitApplication\WebService\bin\PersonDetails.Model.dll
+F:\ASP.NET\ChitApplication\WebService\bin\DataBaseOperations.pdb
+F:\ASP.NET\ChitApplication\WebService\bin\PersonDetails.Model.pdb

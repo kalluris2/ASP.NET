@@ -4,12 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitApplication", "ChitApplication\ChitApplication.csproj", "{7691BD0E-3749-4E5E-A9B8-BB580DE29A82}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2C62B46-882C-4780-B4C6-BBF569E85A1C} = {B2C62B46-882C-4780-B4C6-BBF569E85A1C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitApplication.Tests", "ChitApplication.Tests\ChitApplication.Tests.csproj", "{4ACC04A8-8E71-4107-9C3C-E5E22F9DFDB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonDetails", "PersonDetails.Model\PersonDetails.csproj", "{8C00A764-A6E0-46C9-B8D4-3D96D1E2B56C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseOperations", "DataBaseOperations\DataBaseOperations.csproj", "{ED0D7BB1-B53A-4E18-8778-82F71C13C90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{B2C62B46-882C-4780-B4C6-BBF569E85A1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{ED0D7BB1-B53A-4E18-8778-82F71C13C90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED0D7BB1-B53A-4E18-8778-82F71C13C90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED0D7BB1-B53A-4E18-8778-82F71C13C90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C62B46-882C-4780-B4C6-BBF569E85A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C62B46-882C-4780-B4C6-BBF569E85A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C62B46-882C-4780-B4C6-BBF569E85A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C62B46-882C-4780-B4C6-BBF569E85A1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

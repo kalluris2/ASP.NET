@@ -9,3 +9,5 @@ F:\ASP.NET\ChitApplication\ChitApplication\obj\Debug\ChitApplication.dll
 F:\ASP.NET\ChitApplication\ChitApplication\obj\Debug\ChitApplication.pdb
 F:\ASP.NET\ChitApplication\ChitApplication\bin\PersonDetails.Model.dll
 F:\ASP.NET\ChitApplication\ChitApplication\bin\PersonDetails.Model.pdb
+F:\ASP.NET\ChitApplication\ChitApplication\bin\DataBaseOperations.dll
+F:\ASP.NET\ChitApplication\ChitApplication\bin\DataBaseOperations.pdb
