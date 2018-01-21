@@ -40,6 +40,15 @@ namespace ChitApplication {
         protected global::System.Web.UI.WebControls.TextBox RegistrationNumberTextBox;
         
         /// <summary>
+        /// DeleteLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DeleteLabel;
+        
+        /// <summary>
         /// FirstNameLable control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace ChitApplication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FirstNameTextBox;
+        
+        /// <summary>
+        /// DeleteButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DeleteButton;
         
         /// <summary>
         /// LastNameLabel control.
@@ -85,6 +103,15 @@ namespace ChitApplication {
         protected global::System.Web.UI.WebControls.Label ChitIdLabel;
         
         /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
         /// ChitIdRadioButton control.
         /// </summary>
         /// <remarks>
@@ -92,6 +119,15 @@ namespace ChitApplication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList ChitIdRadioButton;
+        
+        /// <summary>
+        /// ViewButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ViewButton;
         
         /// <summary>
         /// Label1 control.

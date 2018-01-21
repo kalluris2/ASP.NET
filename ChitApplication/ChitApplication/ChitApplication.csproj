@@ -87,6 +87,15 @@
     <Content Include="Connected Services\ServiceReference\ChitApplication.ServiceReference.InsertPaymentDetailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ServiceReference\ChitApplication.ServiceReference.LoginDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference\ChitApplication.ServiceReference.ViewPersonsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference\ChitApplication.ServiceReference.Details.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ServiceReference\ChitApplicationService.disco" />
     <None Include="Connected Services\ServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference\configuration.svcinfo" />
@@ -94,8 +103,11 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="DeleteForm.aspx" />
+    <Content Include="LoginForm.aspx" />
     <Content Include="PaymentForm.aspx" />
     <Content Include="RegistrationForm.aspx" />
+    <Content Include="ViewPerson.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +115,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteForm.aspx.cs">
+      <DependentUpon>DeleteForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteForm.aspx.designer.cs">
+      <DependentUpon>DeleteForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaymentForm.aspx.cs">
       <DependentUpon>PaymentForm.aspx</DependentUpon>
@@ -119,11 +145,22 @@
     <Compile Include="RegistrationForm.aspx.designer.cs">
       <DependentUpon>RegistrationForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewPerson.aspx.cs">
+      <DependentUpon>ViewPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewPerson.aspx.designer.cs">
+      <DependentUpon>ViewPerson.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataBaseOperations\DataBaseOperations.csproj">
       <Project>{ED0D7BB1-B53A-4E18-8778-82F71C13C90E}</Project>
       <Name>DataBaseOperations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{B193403D-81A1-4491-B20E-C00A6A77E182}</Project>
+      <Name>Logging</Name>
     </ProjectReference>
     <ProjectReference Include="..\PersonDetails.Model\PersonDetails.csproj">
       <Project>{8C00A764-A6E0-46C9-B8D4-3D96D1E2B56C}</Project>

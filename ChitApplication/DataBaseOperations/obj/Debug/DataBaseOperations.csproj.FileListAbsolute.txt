@@ -6,3 +6,7 @@ F:\ASP.NET\ChitApplication\DataBaseOperations\obj\Debug\DataBaseOperations.cspro
 F:\ASP.NET\ChitApplication\DataBaseOperations\obj\Debug\DataBaseOperations.csproj.CoreCompileInputs.cache
 F:\ASP.NET\ChitApplication\DataBaseOperations\obj\Debug\DataBaseOperations.dll
 F:\ASP.NET\ChitApplication\DataBaseOperations\obj\Debug\DataBaseOperations.pdb
+F:\ASP.NET\ChitApplication\DataBaseOperations\bin\Debug\Logging.dll
+F:\ASP.NET\ChitApplication\DataBaseOperations\bin\Debug\log4net.dll
+F:\ASP.NET\ChitApplication\DataBaseOperations\bin\Debug\Logging.pdb
+F:\ASP.NET\ChitApplication\DataBaseOperations\bin\Debug\log4net.xml

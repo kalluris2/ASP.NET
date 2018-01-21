@@ -1,4 +1,5 @@
 ﻿using DataBaseOperations;
+using Logging;
 using PersonDetails.Model;
 using System;
 using System.Collections.Generic;
@@ -20,9 +21,11 @@ namespace ChitApplication
 
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
+            Log.WriteDebugLog("registration button is clicked");
             try
             {
                 Details Values = new Details();
+
                 Values.firstname = FirstNameTextBox.Text;
                 Values.lastname = LastNameTextBox.Text;
                 Values.address = AddressTextBox.Text;
@@ -30,34 +33,35 @@ namespace ChitApplication
                 if (!(Regex.IsMatch(RegistrationNumberTextBox.Text, pattern: "^[ 0-9]")))
                 {
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('registratio number contains only numbers');</script>");
+                    Log.WriteDebugLog("registration number not entered");
                 }
                 
                 else if (!(Regex.IsMatch(Values.firstname, pattern: "^[ a-z]")))
                 {
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('enter first name only in small's ');</script>");
-
+                    Log.WriteDebugLog("first name not entered");
                 }
                 
                 else if (!(Regex.IsMatch(Values.lastname, pattern: "^[ a-z]")))
                 {
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('enter last name only in small's ');</script>");
-
+                    Log.WriteDebugLog("last name not entered");
                 }
                 
                 else if (string.IsNullOrEmpty(Values.address))
                 {
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('enter last name');</script>");
-
+                    Log.WriteDebugLog("address not entered");
                 }
                 else if (string.IsNullOrEmpty(PhoneNumberTextBox.Text))
                 {
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('enter phone number');</script>");
-
+                    Log.WriteDebugLog("phone number not entered");
                 }
                 else if (ChitIdRadioButton.SelectedIndex < 0)
                 {
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('select chit policy id');</script>");
-
+                    Log.WriteDebugLog("chit id not selected");
                 }
                 else
                 {
@@ -79,7 +83,7 @@ namespace ChitApplication
                     {
                         Values.chitid = "25k";
                     }
-                 //   DataBase Insert = new DataBase();
+                    Log.WriteDebugLog("values are entered");
                     ServiceReference.ChitApplicationServiceSoapClient serviceObj = new ServiceReference.ChitApplicationServiceSoapClient();
                     ChitApplication.ServiceReference.Details obj = new ServiceReference.Details();
                     obj.registrationnumber = Values.registrationnumber;
@@ -91,7 +95,7 @@ namespace ChitApplication
                     if (serviceObj.InsertRegistration(obj))
                     {
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Data inserted successfully');</script>");
-
+                        Log.WriteDebugLog("data entered into database");
                     }
 
                 }  
@@ -114,8 +118,24 @@ namespace ChitApplication
 
         protected void PaymentButton_Click(object sender, EventArgs e)
         {
+            Log.WriteDebugLog("payment button is clicked");
             Response.Redirect("PaymentForm.aspx");
+            Log.WriteDebugLog("payment page is displayed");
 
+        }
+
+        protected void ViewButton_Click(object sender, EventArgs e)
+        {
+            Log.WriteDebugLog("view persons registered for particular chit button is clicked");
+            Response.Redirect("ViewPerson.aspx");
+            Log.WriteDebugLog("view person page is displayed");
+        }
+
+        protected void DeleteButton_Click(object sender, EventArgs e)
+        {
+            Log.WriteDebugLog("delete button is clicked to delete a record");
+            Response.Redirect("DeleteForm.aspx");
+            Log.WriteDebugLog("delete form is displayed");
         }
     }
 }

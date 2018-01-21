@@ -1,0 +1,8 @@
+F:\ASP.NET\ChitApplication\Logging\bin\Debug\Logging.dll
+F:\ASP.NET\ChitApplication\Logging\bin\Debug\Logging.pdb
+F:\ASP.NET\ChitApplication\Logging\bin\Debug\log4net.dll
+F:\ASP.NET\ChitApplication\Logging\bin\Debug\log4net.xml
+F:\ASP.NET\ChitApplication\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApplication\Logging\obj\Debug\Logging.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApplication\Logging\obj\Debug\Logging.dll
+F:\ASP.NET\ChitApplication\Logging\obj\Debug\Logging.pdb

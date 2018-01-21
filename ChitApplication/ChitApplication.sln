@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseOperations", "DataB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{B2C62B46-882C-4780-B4C6-BBF569E85A1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Logging\Logging.csproj", "{B193403D-81A1-4491-B20E-C00A6A77E182}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{B2C62B46-882C-4780-B4C6-BBF569E85A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2C62B46-882C-4780-B4C6-BBF569E85A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2C62B46-882C-4780-B4C6-BBF569E85A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B193403D-81A1-4491-B20E-C00A6A77E182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B193403D-81A1-4491-B20E-C00A6A77E182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B193403D-81A1-4491-B20E-C00A6A77E182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B193403D-81A1-4491-B20E-C00A6A77E182}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

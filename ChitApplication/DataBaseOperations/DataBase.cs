@@ -1,4 +1,5 @@
-﻿using PersonDetails.Model;
+﻿using Logging;
+using PersonDetails.Model;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -15,17 +16,21 @@ namespace DataBaseOperations
         SqlConnection connection = null;
         public SqlConnection DataBaseConnection()
         {
+            
             string connectionstring = ConfigurationManager.ConnectionStrings["Dbconnection"].ToString();
+            Log.WriteDebugLog("database connection is called");
             return new SqlConnection(connectionstring);
 
         }
 
         public bool InsertRegistration(Details Values)
         {
+            Log.WriteDebugLog("Inser registration method is called");
             try
             {
                 connection = DataBaseConnection();
                 connection.Open();
+                Log.WriteDebugLog("connection is opened");
                 SqlCommand cmd = new SqlCommand("spInsertRegistration", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@registrationno", SqlDbType.Int).Value = Values.registrationnumber;
@@ -35,6 +40,7 @@ namespace DataBaseOperations
                 cmd.Parameters.Add("@address", SqlDbType.VarChar, 50).Value = Values.address;
                 cmd.Parameters.Add("@chitid", SqlDbType.VarChar, 10).Value = Values.chitid;
                 cmd.ExecuteNonQuery();
+                Log.WriteDebugLog("store procedure to insert registration details is execuited");
                 return true;
             }
             catch (Exception ex)
@@ -46,12 +52,14 @@ namespace DataBaseOperations
             finally
             {
                 connection.Close();
+                Log.WriteDebugLog("connection is opened");
             }
             //return false;
 
         }
         public bool InsertPaymentDetails(Details Values)
         {
+            Log.WriteDebugLog("inser payment details method is called");
             try
             {
                 connection = DataBaseConnection();
@@ -66,14 +74,88 @@ namespace DataBaseOperations
                 cmd.Parameters.Add("@chitid", SqlDbType.VarChar, 10).Value = Values.chitid;
                 cmd.Parameters.Add("@emino", SqlDbType.Int).Value = Values.emino;
                 cmd.ExecuteNonQuery();
+                Log.WriteDebugLog("store procedure for payment details is executed");
                 return true;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public bool EmployeeLogin(Details Values)
+        {
+            Log.WriteDebugLog("employeed login method is called");
+            try
+            {
+                    connection = DataBaseConnection();
+                    connection.Open();
+                    string command = "select count(EmployeePassword) from Employee where EmployeeId= '" + Values.employeeid + "' and EmployeePassword= '" + Values.password + "'";
+                    SqlDataAdapter data = new SqlDataAdapter(command, connection);
+                    DataTable table = new DataTable();
+                    data.Fill(table);
+                    if (table.Rows[0][0].ToString() == "1")
+                        return true;
+                    else
+                        return false;
+
+            }
+                catch(Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+        }
+        public DataTable ViewPerson(string value)
+        {
+            Log.WriteDebugLog("view person method is called");
+            try
+            {
+                connection = DataBaseConnection();
+                connection.Open();
+                string command = "select * from RegistrationDetails where ChitId='" + value + "' ";
+                //SqlCommand cmd = new SqlCommand(command, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command,connection);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                return table;
 
             }
             catch(Exception ex)
             {
                 throw ex;
             }
+            finally
+            {
+                connection.Close();
+            }
         }
+
+        public bool DeleteRecord(int id)
+        {
+            Log.WriteDebugLog("delete record method is called");
+            try
+            {
+                connection = DataBaseConnection();
+                connection.Open();
+                string command = "delete from RegistrationDetails where RegistrationNumber='" + id + "'";
+                SqlCommand cmd = new SqlCommand(command, connection);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        
 
     }
 }

@@ -47,6 +47,11 @@ namespace ChitApplication.ServiceReference {
         
         private int eminoField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string passwordField;
+        
+        private int employeeidField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -187,6 +192,32 @@ namespace ChitApplication.ServiceReference {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.passwordField, value) != true)) {
+                    this.passwordField = value;
+                    this.RaisePropertyChanged("password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
+        public int employeeid {
+            get {
+                return this.employeeidField;
+            }
+            set {
+                if ((this.employeeidField.Equals(value) != true)) {
+                    this.employeeidField = value;
+                    this.RaisePropertyChanged("employeeid");
+                }
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -221,6 +252,26 @@ namespace ChitApplication.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsertPaymentDetails", ReplyAction="*")]
         System.Threading.Tasks.Task<ChitApplication.ServiceReference.InsertPaymentDetailsResponse> InsertPaymentDetailsAsync(ChitApplication.ServiceReference.InsertPaymentDetailsRequest request);
+        
+        // CODEGEN: Generating message contract since element name values from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/LoginDetails", ReplyAction="*")]
+        ChitApplication.ServiceReference.LoginDetailsResponse LoginDetails(ChitApplication.ServiceReference.LoginDetailsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/LoginDetails", ReplyAction="*")]
+        System.Threading.Tasks.Task<ChitApplication.ServiceReference.LoginDetailsResponse> LoginDetailsAsync(ChitApplication.ServiceReference.LoginDetailsRequest request);
+        
+        // CODEGEN: Generating message contract since element name value from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ViewPersons", ReplyAction="*")]
+        ChitApplication.ServiceReference.ViewPersonsResponse ViewPersons(ChitApplication.ServiceReference.ViewPersonsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ViewPersons", ReplyAction="*")]
+        System.Threading.Tasks.Task<ChitApplication.ServiceReference.ViewPersonsResponse> ViewPersonsAsync(ChitApplication.ServiceReference.ViewPersonsRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteRecord", ReplyAction="*")]
+        bool DeleteRecord(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteRecord", ReplyAction="*")]
+        System.Threading.Tasks.Task<bool> DeleteRecordAsync(int id);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -420,6 +471,142 @@ namespace ChitApplication.ServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class LoginDetailsRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="LoginDetails", Namespace="http://tempuri.org/", Order=0)]
+        public ChitApplication.ServiceReference.LoginDetailsRequestBody Body;
+        
+        public LoginDetailsRequest() {
+        }
+        
+        public LoginDetailsRequest(ChitApplication.ServiceReference.LoginDetailsRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class LoginDetailsRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public ChitApplication.ServiceReference.Details values;
+        
+        public LoginDetailsRequestBody() {
+        }
+        
+        public LoginDetailsRequestBody(ChitApplication.ServiceReference.Details values) {
+            this.values = values;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class LoginDetailsResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="LoginDetailsResponse", Namespace="http://tempuri.org/", Order=0)]
+        public ChitApplication.ServiceReference.LoginDetailsResponseBody Body;
+        
+        public LoginDetailsResponse() {
+        }
+        
+        public LoginDetailsResponse(ChitApplication.ServiceReference.LoginDetailsResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class LoginDetailsResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool LoginDetailsResult;
+        
+        public LoginDetailsResponseBody() {
+        }
+        
+        public LoginDetailsResponseBody(bool LoginDetailsResult) {
+            this.LoginDetailsResult = LoginDetailsResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ViewPersonsRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ViewPersons", Namespace="http://tempuri.org/", Order=0)]
+        public ChitApplication.ServiceReference.ViewPersonsRequestBody Body;
+        
+        public ViewPersonsRequest() {
+        }
+        
+        public ViewPersonsRequest(ChitApplication.ServiceReference.ViewPersonsRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ViewPersonsRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string value;
+        
+        public ViewPersonsRequestBody() {
+        }
+        
+        public ViewPersonsRequestBody(string value) {
+            this.value = value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ViewPersonsResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ViewPersonsResponse", Namespace="http://tempuri.org/", Order=0)]
+        public ChitApplication.ServiceReference.ViewPersonsResponseBody Body;
+        
+        public ViewPersonsResponse() {
+        }
+        
+        public ViewPersonsResponse(ChitApplication.ServiceReference.ViewPersonsResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ViewPersonsResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public ChitApplication.ServiceReference.Details[] ViewPersonsResult;
+        
+        public ViewPersonsResponseBody() {
+        }
+        
+        public ViewPersonsResponseBody(ChitApplication.ServiceReference.Details[] ViewPersonsResult) {
+            this.ViewPersonsResult = ViewPersonsResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface ChitApplicationServiceSoapChannel : ChitApplication.ServiceReference.ChitApplicationServiceSoap, System.ServiceModel.IClientChannel {
     }
@@ -518,6 +705,64 @@ namespace ChitApplication.ServiceReference {
             inValue.Body = new ChitApplication.ServiceReference.InsertPaymentDetailsRequestBody();
             inValue.Body.values = values;
             return ((ChitApplication.ServiceReference.ChitApplicationServiceSoap)(this)).InsertPaymentDetailsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ChitApplication.ServiceReference.LoginDetailsResponse ChitApplication.ServiceReference.ChitApplicationServiceSoap.LoginDetails(ChitApplication.ServiceReference.LoginDetailsRequest request) {
+            return base.Channel.LoginDetails(request);
+        }
+        
+        public bool LoginDetails(ChitApplication.ServiceReference.Details values) {
+            ChitApplication.ServiceReference.LoginDetailsRequest inValue = new ChitApplication.ServiceReference.LoginDetailsRequest();
+            inValue.Body = new ChitApplication.ServiceReference.LoginDetailsRequestBody();
+            inValue.Body.values = values;
+            ChitApplication.ServiceReference.LoginDetailsResponse retVal = ((ChitApplication.ServiceReference.ChitApplicationServiceSoap)(this)).LoginDetails(inValue);
+            return retVal.Body.LoginDetailsResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ChitApplication.ServiceReference.LoginDetailsResponse> ChitApplication.ServiceReference.ChitApplicationServiceSoap.LoginDetailsAsync(ChitApplication.ServiceReference.LoginDetailsRequest request) {
+            return base.Channel.LoginDetailsAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ChitApplication.ServiceReference.LoginDetailsResponse> LoginDetailsAsync(ChitApplication.ServiceReference.Details values) {
+            ChitApplication.ServiceReference.LoginDetailsRequest inValue = new ChitApplication.ServiceReference.LoginDetailsRequest();
+            inValue.Body = new ChitApplication.ServiceReference.LoginDetailsRequestBody();
+            inValue.Body.values = values;
+            return ((ChitApplication.ServiceReference.ChitApplicationServiceSoap)(this)).LoginDetailsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ChitApplication.ServiceReference.ViewPersonsResponse ChitApplication.ServiceReference.ChitApplicationServiceSoap.ViewPersons(ChitApplication.ServiceReference.ViewPersonsRequest request) {
+            return base.Channel.ViewPersons(request);
+        }
+        
+        public ChitApplication.ServiceReference.Details[] ViewPersons(string value) {
+            ChitApplication.ServiceReference.ViewPersonsRequest inValue = new ChitApplication.ServiceReference.ViewPersonsRequest();
+            inValue.Body = new ChitApplication.ServiceReference.ViewPersonsRequestBody();
+            inValue.Body.value = value;
+            ChitApplication.ServiceReference.ViewPersonsResponse retVal = ((ChitApplication.ServiceReference.ChitApplicationServiceSoap)(this)).ViewPersons(inValue);
+            return retVal.Body.ViewPersonsResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ChitApplication.ServiceReference.ViewPersonsResponse> ChitApplication.ServiceReference.ChitApplicationServiceSoap.ViewPersonsAsync(ChitApplication.ServiceReference.ViewPersonsRequest request) {
+            return base.Channel.ViewPersonsAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ChitApplication.ServiceReference.ViewPersonsResponse> ViewPersonsAsync(string value) {
+            ChitApplication.ServiceReference.ViewPersonsRequest inValue = new ChitApplication.ServiceReference.ViewPersonsRequest();
+            inValue.Body = new ChitApplication.ServiceReference.ViewPersonsRequestBody();
+            inValue.Body.value = value;
+            return ((ChitApplication.ServiceReference.ChitApplicationServiceSoap)(this)).ViewPersonsAsync(inValue);
+        }
+        
+        public bool DeleteRecord(int id) {
+            return base.Channel.DeleteRecord(id);
+        }
+        
+        public System.Threading.Tasks.Task<bool> DeleteRecordAsync(int id) {
+            return base.Channel.DeleteRecordAsync(id);
         }
     }
 }

@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{B193403D-81A1-4491-B20E-C00A6A77E182}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PersonDetails.Model\PersonDetails.csproj">
       <Project>{8C00A764-A6E0-46C9-B8D4-3D96D1E2B56C}</Project>
       <Name>PersonDetails</Name>

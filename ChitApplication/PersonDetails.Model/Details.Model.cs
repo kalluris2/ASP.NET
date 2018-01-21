@@ -18,6 +18,8 @@ namespace PersonDetails.Model
         private int AmountPaid;
         private int PaymentId;
         private int EMINo;
+        private string Password = "";
+        private int EmployeeId;
 
         public int registrationnumber { get => RegistrationNumber; set => RegistrationNumber = value; }
         public string firstname { get => FirstName; set => FirstName = value; }
@@ -29,6 +31,8 @@ namespace PersonDetails.Model
         public int amountpaid { get => AmountPaid; set => AmountPaid = value; }
         public int paymentid { get => PaymentId; set => PaymentId = value; }
         public int emino { get => EMINo; set => EMINo = value; }
+        public string password { get => Password; set => Password = value; }
+        public int employeeid { get => EmployeeId; set => EmployeeId = value; }
 
 
 

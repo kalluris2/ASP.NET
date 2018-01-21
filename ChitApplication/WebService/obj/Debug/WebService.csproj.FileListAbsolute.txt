@@ -11,3 +11,7 @@ F:\ASP.NET\ChitApplication\WebService\bin\DataBaseOperations.dll
 F:\ASP.NET\ChitApplication\WebService\bin\PersonDetails.Model.dll
 F:\ASP.NET\ChitApplication\WebService\bin\DataBaseOperations.pdb
 F:\ASP.NET\ChitApplication\WebService\bin\PersonDetails.Model.pdb
+F:\ASP.NET\ChitApplication\WebService\bin\Logging.dll
+F:\ASP.NET\ChitApplication\WebService\bin\log4net.dll
+F:\ASP.NET\ChitApplication\WebService\bin\Logging.pdb
+F:\ASP.NET\ChitApplication\WebService\bin\log4net.xml

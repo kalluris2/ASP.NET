@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Services;
 using PersonDetails.Model;
 using DataBaseOperations;
+using System.Data;
 
 namespace WebService
 {
@@ -29,17 +30,92 @@ namespace WebService
         [WebMethod]
         public bool InsertRegistration(Details values)
         {
-            DataBase obj = new DataBase();
-            bool check= obj.InsertRegistration(values);
-            return check;
+            
+            try
+            {
+                DataBase obj = new DataBase();
+                bool check = obj.InsertRegistration(values);
+                return check;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [WebMethod]
         public bool InsertPaymentDetails(Details values)
         {
-            DataBase obj = new DataBase();
-            bool check = obj.InsertPaymentDetails(values);
-            return check;
+            try
+            {
+                DataBase obj = new DataBase();
+                bool check = obj.InsertPaymentDetails(values);
+                return check;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [WebMethod]
+        public bool LoginDetails(Details values)
+        {
+            try
+            {
+                DataBase obj = new DataBase();
+                bool check = obj.EmployeeLogin(values);
+                return check;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        [WebMethod]
+        public List<PersonDetails.Model.Details> ViewPersons(string value)
+        {
+            try
+            {
+                DataBase obj = new DataBase();
+                var data = obj.ViewPerson(value);
+                List<PersonDetails.Model.Details> details = new List<PersonDetails.Model.Details>();
+                foreach (DataRow item in data.Rows)
+                {
+                    //List<PersonDetails.Model.Details> details = new List<PersonDetails.Model.Details>();
+                    PersonDetails.Model.Details Instance = new Details();
+                    Instance.registrationnumber = Convert.ToInt32(item[0]);
+                    Instance.firstname = item[1].ToString();
+                    Instance.lastname = item[2].ToString();
+                    Instance.phonenumber = Convert.ToInt32(item[3]);
+                    Instance.address = item[4].ToString();
+                    details.Add(Instance);
+
+                }
+                return details;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+
+        [WebMethod]
+        public bool DeleteRecord(int id)
+        {
+            try
+            {
+
+                DataBase obj = new DataBase();
+                bool check = obj.DeleteRecord(id);
+                return check;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
     }
