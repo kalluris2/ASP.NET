@@ -1,0 +1,9 @@
+F:\ASP.NET\ChitApp\ChitApp\bin\ChitApp.dll.config
+F:\ASP.NET\ChitApp\ChitApp\bin\ChitApp.dll
+F:\ASP.NET\ChitApp\ChitApp\bin\ChitApp.pdb
+F:\ASP.NET\ChitApp\ChitApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASP.NET\ChitApp\ChitApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASP.NET\ChitApp\ChitApp\obj\Debug\ChitApp.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApp\ChitApp\obj\Debug\ChitApp.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApp\ChitApp\obj\Debug\ChitApp.dll
+F:\ASP.NET\ChitApp\ChitApp\obj\Debug\ChitApp.pdb
