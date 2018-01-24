@@ -49,7 +49,7 @@
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Button ID="LoginButton" runat="server" Text="Login" />
+                    <asp:Button ID="LoginButton" runat="server" Text="Login" OnClick="LoginButton_Click" />
                 </td>
                 <td class="auto-style5">
                     <asp:Button ID="ClearButton" runat="server" Text="Clear" />
