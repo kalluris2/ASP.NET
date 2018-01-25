@@ -21,19 +21,19 @@
                 <td>&nbsp;</td>
            </tr>
             <tr>
-                <td class="auto-style5">* User Name:</td>
+                <td class="auto-style7">* Employee Id:</td>
                 <td class="auto-style6">
-                    <asp:TextBox ID="UserNameTextBox" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="EmployeeIdTextBox" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter User Name" ControlToValidate="UserNameTextBox"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter Employee Id" ControlToValidate="EmployeeIdTextBox"></asp:RequiredFieldValidator>
                    
                 </td>
             </tr>
             <tr>
-                <td class="auto-style5">*&nbsp;&nbsp; Password:</td>
+                <td class="auto-style7">*&nbsp;&nbsp; Password:</td>
                 <td class="auto-style6">
-                    <asp:TextBox ID="PasswordTextBox" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="PasswordTextBox" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="PasswordTextBox" ErrorMessage="Please Enter Password"></asp:RequiredFieldValidator>                    
@@ -48,7 +48,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">
+                <td class="auto-style7">
                     <asp:Button ID="LoginButton" runat="server" Text="Login" OnClick="LoginButton_Click" />
                 </td>
                 <td class="auto-style5">
@@ -68,4 +68,13 @@
            </tr>
         </table>
     </asp:Content>
+
+<asp:Content ID="Content2" runat="server" contentplaceholderid="head">
+    <style type="text/css">
+        .auto-style7 {
+            text-align: right;
+        }
+    </style>
+</asp:Content>
+
 

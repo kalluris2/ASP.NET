@@ -13,27 +13,16 @@
             height: 100%;
         }
         .auto-style3 {
-            height: 613px;
-        }
-        .auto-style5{
-            height:auto;
+            height: 600px;
         }
         .auto-style4 {
             width: 100%;
             height: 100%;
         }
         .auto-style6 {
-            width: 202px;
+            width: 130px;
         }
-        .auto-style2{
-            width:auto;
-            height:auto;
-        }
-        .auto-style12{
-            height:30%;
-            width: 50%;
-        }
-     
+             
       
     </style>
 </head>
@@ -48,14 +37,14 @@
                  </td>                
             </tr>
             <tr>
-                <td class="auto-style3">
+                <td class="auto-style3" >
                     <table class="auto-style4">
                         <tr>
                             
                             <td style="vertical-align: central; text-align: center; background-color: #6699FF; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: medium;" class="auto-style6">
-                                <h3 style="text-align:center; font-style:inherit">Click Below !</h3>    
+                                <h3 style="text-align:center; height:5% ; font-style:inherit">Click Below !</h3>    
                                 
-                                    <asp:Menu ID="Menu1" ForeColor="White" Height="80%"   runat="server">
+                                    <asp:Menu ID="Menu1" ForeColor="White" Height="95%"   runat="server">
                                         <StaticMenuStyle BackColor="SandyBrown" />
                                         <StaticMenuItemStyle BorderColor="Black" BorderWidth="1px" BorderStyle="Solid"/>
                                         <StaticHoverStyle Font-Bold="true" />

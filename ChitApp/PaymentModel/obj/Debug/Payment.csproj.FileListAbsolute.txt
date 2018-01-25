@@ -1,0 +1,6 @@
+F:\ASP.NET\ChitApp\PaymentModel\bin\Debug\PaymentModel.dll
+F:\ASP.NET\ChitApp\PaymentModel\bin\Debug\PaymentModel.pdb
+F:\ASP.NET\ChitApp\PaymentModel\obj\Debug\Payment.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApp\PaymentModel\obj\Debug\Payment.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApp\PaymentModel\obj\Debug\PaymentModel.dll
+F:\ASP.NET\ChitApp\PaymentModel\obj\Debug\PaymentModel.pdb

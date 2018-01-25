@@ -67,7 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="HomePage.aspx" />
     <Content Include="Images\calender.jpg" />
+    <Content Include="Images\money.jpeg" />
     <Content Include="PaymentPage.aspx" />
     <Content Include="RegistrationPage.aspx" />
     <Content Include="Sites.Master" />
@@ -79,7 +81,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HomePage.aspx" />
     <Content Include="LoginPag.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -120,6 +121,16 @@
     <Compile Include="Sites.Master.designer.cs">
       <DependentUpon>Sites.Master</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseOperations\DatabaseOperations.csproj">
+      <Project>{40B48585-43B1-4259-A2F3-1C6B419D03AD}</Project>
+      <Name>DatabaseOperations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationModel\Registration.csproj">
+      <Project>{0533C8EC-173D-4ED5-A977-AE627DC85BC6}</Project>
+      <Name>Registration</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

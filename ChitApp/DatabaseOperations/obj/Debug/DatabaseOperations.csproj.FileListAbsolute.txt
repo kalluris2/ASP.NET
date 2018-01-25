@@ -1,0 +1,10 @@
+F:\ASP.NET\ChitApp\DatabaseOperations\bin\Debug\DatabaseOperations.dll
+F:\ASP.NET\ChitApp\DatabaseOperations\bin\Debug\DatabaseOperations.pdb
+F:\ASP.NET\ChitApp\DatabaseOperations\bin\Debug\PaymentModel.dll
+F:\ASP.NET\ChitApp\DatabaseOperations\bin\Debug\RegistrationModel.dll
+F:\ASP.NET\ChitApp\DatabaseOperations\bin\Debug\PaymentModel.pdb
+F:\ASP.NET\ChitApp\DatabaseOperations\bin\Debug\RegistrationModel.pdb
+F:\ASP.NET\ChitApp\DatabaseOperations\obj\Debug\DatabaseOperations.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApp\DatabaseOperations\obj\Debug\DatabaseOperations.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApp\DatabaseOperations\obj\Debug\DatabaseOperations.dll
+F:\ASP.NET\ChitApp\DatabaseOperations\obj\Debug\DatabaseOperations.pdb

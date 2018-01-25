@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div style="font-family: 'Eras Medium ITC'; font-size: medium; height:2px; font-style: oblique">
              <strong>Customer Registration Form</strong></div>
-    <table class="auto-style11">
+    <table align="left" class ="auto-style11">
         <tr>
             <td class="auto-style2">&nbsp;</td>
             <td class="">&nbsp;</td>
@@ -68,9 +68,19 @@
             <td>&nbsp;</td>
         </tr>
      
+        <tr>
+            <td class="auto-style9">* ChitId :</td>
+            <td class="auto-style5">
+                <asp:TextBox ID="ChitIdTextBox" runat="server"></asp:TextBox>
+            </td>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ControlToValidate="ChitIdTextBox" runat ="server" ErrorMessage="Enter ChitId" ForeColor="Red"></asp:RequiredFieldValidator>
+            </td>
+        </tr>
+     
             <tr>
             <td class="auto-style7">
-                <asp:Button ID="RegisterButton" runat="server" Text="Register" />
+                <asp:Button ID="RegisterButton" runat="server" Text="Register" OnClick="RegisterButton_Click" />
                 </td>
             <td class="auto-style10">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -85,9 +95,6 @@
     <style type="text/css">
         .auto-style7 {
             height:15%;
-            text-align: right;
-        }
-        .auto-style8 {
             text-align: right;
         }
         .auto-style9 {

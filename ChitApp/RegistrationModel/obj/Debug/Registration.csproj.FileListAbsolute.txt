@@ -1,0 +1,6 @@
+F:\ASP.NET\ChitApp\RegistrationModel\bin\Debug\RegistrationModel.dll
+F:\ASP.NET\ChitApp\RegistrationModel\bin\Debug\RegistrationModel.pdb
+F:\ASP.NET\ChitApp\RegistrationModel\obj\Debug\Registration.csprojResolveAssemblyReference.cache
+F:\ASP.NET\ChitApp\RegistrationModel\obj\Debug\Registration.csproj.CoreCompileInputs.cache
+F:\ASP.NET\ChitApp\RegistrationModel\obj\Debug\RegistrationModel.dll
+F:\ASP.NET\ChitApp\RegistrationModel\obj\Debug\RegistrationModel.pdb

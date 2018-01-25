@@ -3,11 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div style="font-family: 'Lucida Calligraphy'; font-size: medium; font-style: inherit" class="auto-style9">
             <strong>Payment Page</strong></div>
-    <table align="center" class="auto-style12">
+    <table align="left" class="auto-style12">
 
         <tr>
             <td class="auto-style13">* fields are mandatory</td>
-            <td class="">&nbsp;</td>
+            <td class="auto-style18">&nbsp;</td>
             <td class="">&nbsp;</td>
         </tr>
         <tr>
@@ -17,7 +17,7 @@
         </tr>
         <tr>
             <td class="auto-style14">* Payment Id :</td>
-            <td class="auto-style4">
+            <td class="auto-style19">
                 <asp:TextBox ID="PaymentIdTextBox" runat="server"></asp:TextBox>
             </td>
             <td class="auto-style16">
@@ -26,7 +26,7 @@
         </tr>
         <tr>
             <td class="auto-style14">* Registration Number :</td>
-            <td class="auto-style7">
+            <td class="auto-style18">
                 <asp:TextBox ID="RegistrationNoTextBox" runat="server"></asp:TextBox>
             </td>
             <td class="auto-style16">
@@ -35,7 +35,7 @@
         </tr>
         <tr>
             <td class="auto-style14">* Payment Amount :</td>
-            <td class="auto-style4">
+            <td class="auto-style19">
                 <asp:TextBox ID="AmountTextBox" runat="server"></asp:TextBox>
             </td>
             <td class="auto-style16">
@@ -44,7 +44,7 @@
         </tr>
                <tr>
             <td class="auto-style14">* Payment Date :</td>
-            <td class="auto-style4">
+            <td class="auto-style19">
                 <asp:TextBox ID="DateTextBox" runat="server"></asp:TextBox>
 &nbsp;
                 <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/calender.jpg" OnClick="ImageButton1_Click" />
@@ -66,7 +66,7 @@
         </tr>
         <tr>
             <td class="auto-style14">* EMI Number :</td>
-            <td class="auto-style4">
+            <td class="auto-style19">
                 <asp:TextBox ID="EmiTextBox" runat="server"></asp:TextBox>
             </td>
             <td class="auto-style16">
@@ -75,7 +75,7 @@
         </tr>
         <tr>
             <td class="auto-style14">* Paid By :</td>
-            <td class="auto-style4">
+            <td class="auto-style19">
                 <asp:TextBox ID="PaidByTextBox" runat="server"></asp:TextBox>
             </td>
             <td class="auto-style16">
@@ -84,22 +84,22 @@
         </tr>
                <tr>
             <td class="auto-style14">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
             <td class="auto-style16">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style14">&nbsp;</td>
-            <td class="auto-style4">
+            <td class="auto-style19">
                 <asp:Button ID="PayButton" runat="server" Text="Pay" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  
             </td>
-            <td class="auto-style16">&nbsp;</td>
+            <td class="">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style14">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
-            <td class="auto-style16">&nbsp;</td>
+            <td class="auto-style17">&nbsp;</td>
+            <td class="auto-style18">&nbsp;</td>
+            <td class="">&nbsp;</td>
         </tr>
     </table>
   </asp:Content>
@@ -107,16 +107,26 @@
 <asp:Content ID="Content2" runat="server" contentplaceholderid="head">
     <style type="text/css">
         .auto-style13 {
-            width: 70%;
+            width: 241px;
             height: 30%;
         }
         .auto-style14 {
             height: auto;
-            width: auto;
-            text-align:right;
+            width: 241px;
+            text-align: right;
         }
         .auto-style16 {
             width: 169px;
+        }
+        .auto-style17 {
+            width: 241px;
+        }
+        .auto-style18 {
+            width: 49%;
+        }
+        .auto-style19 {
+            width: 49%;
+            height: 100%;
         }
     </style>
 </asp:Content>

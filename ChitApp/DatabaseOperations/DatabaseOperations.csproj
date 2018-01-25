@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +43,16 @@
   <ItemGroup>
     <Compile Include="Database.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentModel\Payment.csproj">
+      <Project>{C03CD7E1-D8E2-4A56-AF32-6C5A051F1936}</Project>
+      <Name>Payment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegistrationModel\Registration.csproj">
+      <Project>{0533C8EC-173D-4ED5-A977-AE627DC85BC6}</Project>
+      <Name>Registration</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

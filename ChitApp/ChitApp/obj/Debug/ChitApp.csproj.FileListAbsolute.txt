@@ -7,3 +7,9 @@ F:\ASP.NET\ChitApp\ChitApp\obj\Debug\ChitApp.csprojResolveAssemblyReference.cach
 F:\ASP.NET\ChitApp\ChitApp\obj\Debug\ChitApp.csproj.CoreCompileInputs.cache
 F:\ASP.NET\ChitApp\ChitApp\obj\Debug\ChitApp.dll
 F:\ASP.NET\ChitApp\ChitApp\obj\Debug\ChitApp.pdb
+F:\ASP.NET\ChitApp\ChitApp\bin\DatabaseOperations.dll
+F:\ASP.NET\ChitApp\ChitApp\bin\RegistrationModel.dll
+F:\ASP.NET\ChitApp\ChitApp\bin\PaymentModel.dll
+F:\ASP.NET\ChitApp\ChitApp\bin\DatabaseOperations.pdb
+F:\ASP.NET\ChitApp\ChitApp\bin\RegistrationModel.pdb
+F:\ASP.NET\ChitApp\ChitApp\bin\PaymentModel.pdb

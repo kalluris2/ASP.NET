@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DatabaseOperations;
+using Registration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +13,30 @@ namespace ChitApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+
+        protected void RegisterButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RegistrationModel Values = new RegistrationModel();
+                Values.RegistrationNumber = Convert.ToInt32(RegistrationIdTextBox.Text);
+                Values.FirstName = FirstNameTextBox.Text;
+                Values.SecondName = LastNameTextBox.Text;
+                Values.PhoneNumber = Convert.ToInt32(PhnoTextBox.Text);
+                Values.ChitId = ChitIdTextBox.Text;
+                Values.Address = AddressTextBox.Text;
+                Database Data = new Database();
+                if (Data.InsertRegistration(Values))
+                {
+                    Response.Write("data registered successfully");
+                }
+            }
+            catch(Exception ex)
+            {
+                Response.Write(ex.Message);
+            }
 
         }
     }
